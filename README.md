@@ -2,8 +2,8 @@
 
 ![Veridia Police Department Logo](public/favicon.svg)
 
-**Game Investigasi Detektif Retro-Noir 1950s Berbasis Flat-File Architecture**  
-*Menyajikan sensasi deduksi analog klasik dengan UI diegetik, interogasi poligraf real-time, dan papan bukti benang merah dinamis.*
+**1950s Retro-Noir Detective Investigation Game Powered by Flat-File Architecture**  
+*Delivering an authentic analog deduction experience with diegetic UI, real-time polygraph interrogation, and a dynamic red-string evidence board.*
 
 ![Laravel 12](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -14,150 +14,144 @@
 
 ---
 
-## 📸 Showcase & Preview Galeri
+## 📸 Showcase & Preview Gallery
 
-### 1. Start Menu & Terminal Teletype
+### 1. Start Menu & Teletype Terminal
 
-Portal utama investigasi dengan antarmuka teletype mesin tik retro, map manila berkas perkara rahasia, pendar lampu meja kerja, dan simulasi asap cerutu atmosferik.
+The primary investigation portal featuring a retro teletype terminal interface, confidential manila case dossier, banker desk ambient glow, and atmospheric procedural cigar smoke.
 
-![Start Menu & Terminal Teletype](public/screenshots/title-preview.png)
-
----
-
-### 2. Meja Kerja Investigasi & Berkas Perkara
-
-Pusat komando detektif dengan layout terkunci 100% viewport fit (zero vertical scrollbar). Menampilkan berkas perkara fisik berpenjepit kertas, kartu arsip tersangka vintage, dan baki barang bukti forensik dengan segel *Chain of Custody*.
-
-![Meja Kerja Detektif](public/screenshots/desk-preview.png)
+![Start Menu & Teletype Terminal](public/screenshots/title-preview.png)
 
 ---
 
-### 3. Ruang Interogasi & Osiloskop Poligraf ECG
+### 2. Detective Work Desk & Case Dossier
 
-Sesi interogasi tatap muka intensif dengan simulasi grafik poligraf ECG dinamis, deteksi kontradiksi kesaksian secara real-time, penyadapan telepon rahasia (*wiretap*), dan sistem sanggahan (*Objection!*).
+The central command station with a 100% viewport-locked layout (zero vertical scrollbars). Features a paperclipped physical case file, vintage suspect index cards, and a forensic evidence tray with sealed Chain of Custody labels.
 
-![Ruang Interogasi](public/screenshots/interrogation-preview.png)
-
----
-
-### 4. Papan Investigasi Benang Merah (SVG Dynamic Corkboard)
-
-Papan gabus penyelidikan visual interaktif untuk menghubungkan pin tersangka, barang bukti, dan motif kejahatan menggunakan benang merah dinamis berbasis vektor SVG murni.
-
-![Papan Benang Merah](public/screenshots/corkboard-preview.png)
+![Detective Work Desk](public/screenshots/desk-preview.png)
 
 ---
 
-## 🔍 Sinopsis Kasus: CASE_001 (Operation Ouroboros)
+### 3. Interrogation Room & Dynamic Polygraph Oscilloscope
 
-> *"14 November 1953, Pukul 23:42. Fasilitas Riset Bawah Tanah Sublevel 3 Aethelgard Quantum Dynamics diguncang insiden sabotase tingkat tinggi. Kepala Ilmuwan Kuantum, Dr. Wallace Vance, ditemukan tewas dengan terminal brankas vakum hangus terbakar. Inti prototipe revolusioner 'Ouroboros-X' raib tanpa jejak."*
+Intense face-to-face interrogation room with real-time polygraph ECG simulation, live contradiction detection, wiretap telephone transcripts, and an interactive Objection mechanics system.
 
-### Profil Saksi & Tersangka Kunci
-
-1. **Dr. Aris Thorne (Lead Research Physicist - Usia 44 Thn)**
-   - Mengklaim berada di ruang observasi lantai 2 menyusun laporan kalibrasi spektrometer saat insiden terjadi.
-2. **Elena Vance (Chief of Security - Usia 29 Thn)**
-   - Putri kandung korban. Mengklaim sedang melakukan patroli rutin di pos gerbang luar gedung induk.
-3. **Julian Croft (Aethelgard Financial Director - Usia 52 Thn)**
-   - Mengklaim sedang menghadiri jamuan makan malam privat bersama investor di West End Club hingga larut malam.
+![Interrogation Room](public/screenshots/interrogation-preview.png)
 
 ---
 
-## ⚡ Arsitektur & Keunggulan Sistem
+### 4. Investigation Board (Dynamic SVG Corkboard)
+
+An interactive corkboard to connect suspect pins, physical evidence, and motives using dynamic SVG vector yarn lines.
+
+![Investigation Corkboard](public/screenshots/corkboard-preview.png)
+
+---
+
+## 🔍 Case Synopsis: CASE_001 (Operation Ouroboros)
+
+> *"November 14, 1953, 23:42 PM. The underground research complex of Sublevel 3 at Aethelgard Quantum Dynamics is rocked by a high-level sabotage incident. Chief Quantum Scientist, Dr. Wallace Vance, is found deceased beside a scorched vacuum vault terminal. The revolutionary prototype core 'Ouroboros-X' has vanished without a trace."*
+
+### Key Suspects & Witnesses
+
+1. **Dr. Aris Thorne (Lead Research Physicist - Age 44)**
+   - Claims he was soldering a compensator circuit in the secondary lab on Level 2 until 00:30, swearing he never set foot in Sublevel 3.
+2. **Elena Vance (Chief of Physical & Digital Security - Age 29)**
+   - Victim's daughter. Claims she was on solo duty at the Level 1 main gate monitoring security consoles until the power failed at 23:42.
+3. **Julian Croft (Aethelgard Financial Director - Age 52)**
+   - Claims he was enjoying a private glass of whiskey at the Executive Lounge on Level 4 while reviewing quarterly financial reports alone.
+
+---
+
+## ⚡ Architecture & Core Highlights
 
 - **Zero-Database Architecture (Flat-File JSON):**
-  Seluruh konfigurasi kasus, lore berkas, transkrip dialog pohon interogasi, barang bukti, evaluasi dakwaan, hingga state penyimpanan (*save/load slot*) dikelola murni melalui berkas JSON terstruktur di `storage/app/cases/` tanpa memerlukan server database relasional eksternal.
+  All case configurations, lore files, interrogation dialogue trees, evidence registries, indictment rules, and save/load slots operate purely on structured JSON files inside `storage/app/cases/` without external database servers.
 - **Diegetic Vintage UI & 100% Viewport Locked:**
-  Seluruh elemen antarmuka dirancang menyerupai perlengkapan fisik detektif era 1950-an (kertas manila berpenjepit klip logam, kartu indeks arsip kepolisian retro, kantong bukti plastik forensik berstempel lab). Seluruh halaman dirancang pas dalam satu layar (zero vertical scrollbar) pada resolusi 1080p maupun 1366x768.
+  The entire UI resembles authentic 1950s detective stationery (metal-clipped manila paper, police archive index cards, lab-sealed evidence bags). All pages are locked to a single screen fit (zero vertical scrollbars) on 1080p and 1366x768 displays.
 - **Procedural Web Audio API Synthesizer:**
-  Efek suara retro disintesis secara prosedural via Web Audio API (tuts mesin tik, frekuensi osiloskop, denyut poligraf, suara sobekan kertas, klik tombol analog, hingga dentuman palu sidang) dengan strict gesture guard yang kebal terhadap pembatasan autoplay browser modern.
+  Authentic vintage sound effects synthesized procedurally via Web Audio API (typewriter key clatter, oscilloscope hum, polygraph pulses, paper rustling, rotary clicks, and heavy gavel strikes) backed by strict autoplay gesture protection.
 - **Dynamic Real-Time SVG Corkboard:**
-  Kanvas interaktif untuk menarik benang merah penghubung antar-bukti secara visual menggunakan kalkulasi matriks SVG bebas dependensi library eksternal.
+  Interactive canvas for linking evidence nodes and suspects via reactive SVG calculations without external charting dependencies.
 - **GPU-Accelerated Retro CRT Scanlines:**
-  Filter raster tabung kaca monitor retro dengan chromatic aberration mikro dan kelengkungan vignette yang diisolasi pada composite layer GPU agar performa rendering tetap 60 FPS tanpa mengaburkan teks mikro.
+  Authentic CRT tube raster filter with micro chromatic aberration and vignette curves isolated on an independent GPU composite layer to preserve 60 FPS performance while keeping micro-text legible.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Komponen | Teknologi | Deskripsi |
+| Component | Technology | Description |
 | :--- | :--- | :--- |
-| **Backend Core** | [Laravel 12](https://laravel.com) | Framework PHP modern dengan arsitektur Service-Action |
-| **Runtime** | PHP 8.2+ | Eksekusi server-side performa tinggi |
-| **Styling & Theme** | [Tailwind CSS v4](https://tailwindcss.com) | Arsitektur modular `@import` terbagi atas theme, utilities, dan animasi |
-| **Reactivity** | [Alpine.js 3.x](https://alpinejs.dev) | Manajemen state global store dan interaktivitas komponen UI |
-| **Audio Engine** | Web Audio API | Synthesizer suara prosedural bebas file audio statis besar |
-| **Vector Graphics** | Native Inline SVG | Rendering siluet tersangka resolusi tinggi dan benang merah papan bukti |
-| **Testing Suite** | PHPUnit | Pengujian otomatis alur investigasi, evaluasi bukti, dan save state |
+| **Backend Core** | [Laravel 12](https://laravel.com) | Modern PHP framework with Service-Action pattern |
+| **Runtime** | PHP 8.2+ | High-performance server-side execution |
+| **Styling & Theme** | [Tailwind CSS v4](https://tailwindcss.com) | Modular `@import` architecture (theme, utilities, animations) |
+| **Reactivity** | [Alpine.js 3.x](https://alpinejs.dev) | Reactive global store and lightweight component interactions |
+| **Audio Engine** | Web Audio API | Procedural audio synthesis without large static assets |
+| **Vector Graphics** | Native Inline SVG | High-resolution suspect mugshots and dynamic yarn lines |
+| **Testing Suite** | PHPUnit | Automated tests for case repository, contradiction engine, and state |
 
 ---
 
-## 🚀 Panduan Instalasi Lokal
+## 🚀 Local Installation Guide
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek di lingkungan pengembangan lokal:
+Ensure your development environment meets the following requirements: **PHP >= 8.2**, **Composer >= 2.x**, and **Node.js >= 18.x**.
 
-### 1. Prasyarat Sistem
-
-- PHP >= 8.2 dengan ekstensi `ext-json`, `ext-mbstring`, `ext-fileinfo`
-- Composer >= 2.x
-- Node.js >= 18.x & NPM
-
-### 2. Clone Repositori
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/NDVERS/noir-archive.git
 cd noir-archive
 ```
 
-### 3. Instalasi Dependensi
+### 2. Install Dependencies
 
 ```bash
-# Instal dependensi PHP
+# Install PHP dependencies
 composer install
 
-# Instal dependensi Frontend
+# Install Frontend dependencies
 npm install
 ```
 
-### 4. Konfigurasi Environment
+### 3. Environment Setup
 
 ```bash
-# Salin template environment
+# Duplicate environment file
 cp .env.example .env
 
-# Generate application encryption key
+# Generate application key
 php artisan key:generate
 ```
 
-### 5. Kompilasi Aset Frontend
+### 4. Build Frontend Assets
 
 ```bash
-# Build untuk mode produksi
+# Compile production bundle
 npm run build
 
-# Atau jalankan dev server Vite untuk hot-reloading
+# Or launch Vite development server
 npm run dev
 ```
 
-### 6. Jalankan Server Lokal
+### 5. Run Local Server
 
 ```bash
 php artisan serve
 ```
 
-Buka peramban web dan akses game melalui: `http://127.0.0.1:8000`
+Open your browser and navigate to: `http://127.0.0.1:8000`
 
 ---
 
-## 🧪 Menjalankan Test Suite Otomatis
+## 🧪 Automated Test Suite
 
-Proyek ini dilengkapi dengan 26 automated unit & feature tests yang mencakup verifikasi controller, engine evaluasi kontradiksi kesaksian, validasi berkas perkara, dan integritas save manager:
+The project includes 26 automated unit and feature tests covering controller endpoints, testimony contradiction rules, indictment evaluation, and save slot integrity:
 
 ```bash
 php artisan test
 ```
 
-**Hasil Pengujian:**
+**Test Execution Output:**
 
 ```text
    PASS  Tests\Unit\ExampleTest
@@ -204,19 +198,19 @@ php artisan test
 
 ---
 
-## 📂 Struktur Direktori Kasus (Flat-File Engine)
+## 📂 Case Directory Structure (Flat-File Engine)
 
 ```text
 storage/app/cases/case_001/
-├── case_info.json    # Metadata kasus, ringkasan insiden, korban, lokasi, dan target investigasi
-├── suspects.json     # Profil lengkap tersangka, peran, usia, alibi awal, dan ciri fisik
-├── evidences.json    # Daftar barang bukti forensik, tag lab, kategori, dan hasil uji teknis
-├── dialogues.json    # Pohon dialog interogasi, transkrip sadapan, dan pemetaan kontradiksi
-└── solution.json     # Kunci kebenaran kasus, bobot penilaian dakwaan, dan skenario vonis
+├── case_info.json    # Case metadata, incident briefing, victim, and objectives
+├── suspects.json     # Full suspect dossiers, roles, alibis, and physical traits
+├── evidences.json    # Forensic evidence records, lab tags, categories, and findings
+├── dialogues.json    # Interrogation trees, wiretap logs, and contradiction bindings
+└── solution.json     # Solution truth key, scoring penalties, and verdict outcomes
 ```
 
 ---
 
-## 📜 Lisensi
+## 📜 License
 
-Proyek ini dirilis di bawah lisensi [MIT License](LICENSE). Bebas digunakan, dipelajari, dan dikembangkan untuk keperluan edukasi dan non-komersial.
+Distributed under the [MIT License](LICENSE). Free for educational and non-commercial exploration.
