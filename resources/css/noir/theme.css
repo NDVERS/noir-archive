@@ -1,0 +1,17 @@
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-typewriter: 'Courier Prime', 'Special Elite', 'Courier New', monospace;
+    --font-noir: 'Cinzel', 'Playfair Display', Georgia, serif;
+    
+    --color-noir-950: #0d0b0a;
+    --color-noir-900: #191716;
+    --color-noir-800: #261c14;
+    --color-noir-700: #3b2c21;
+    --color-manila-50: #fbf9f4;
+    --color-manila-100: #ebe3d5;
+    --color-manila-200: #d5c7a3;
+    --color-manila-300: #b8a67c;
+    --color-crimson-800: #991b1b;
+    --color-crimson-600: #dc2626;
+    --color-amber-lamp: #f59e0b;
+}

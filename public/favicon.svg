@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="noirBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="75%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+
+    <!-- Gold Metallic Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Amber Glow Ribbon -->
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Badge Shield Gradient -->
+    <linearGradient id="badgeGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="65%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="goldShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Base Shield / Circle Background -->
+  <circle cx="32" cy="32" r="30" fill="url(#noirBg)"/>
+  
+  <!-- Outer Gold Ring -->
+  <circle cx="32" cy="32" r="29" fill="none" stroke="url(#goldGrad)" stroke-width="1.8"/>
+  
+  <!-- Inner Beaded Ring -->
+  <circle cx="32" cy="32" r="26.5" fill="none" stroke="#d97706" stroke-width="0.75" stroke-dasharray="1.5 1.5" opacity="0.85"/>
+
+  <!-- Subtle Radial Glow behind Icon -->
+  <circle cx="32" cy="30" r="16" fill="#f59e0b" opacity="0.12" filter="blur(3px)"/>
+
+  <!-- Group: Detective Fedora & Badge Emblem -->
+  <g filter="url(#goldShadow)">
+    <!-- Fedora Crown with Noir Pinch Crease -->
+    <path d="M 23 20 C 24 13.5, 27.5 11, 32 13.5 C 36.5 11, 40 13.5, 41 20 C 39.5 22.5, 24.5 22.5, 23 20 Z" 
+          fill="#1c1917" stroke="url(#goldGrad)" stroke-width="1.2" stroke-linejoin="round"/>
+    
+    <!-- Fedora Center Pinch Shadow -->
+    <path d="M 32 13.5 C 32 16, 31 18, 30.5 19.5" 
+          stroke="#451a03" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Fedora Ribbon Band -->
+    <path d="M 22.8 19.8 C 26.5 20.8, 37.5 20.8, 41.2 19.8 L 41.5 22.2 C 37.5 23.2, 26.5 23.2, 22.5 22.2 Z" 
+          fill="url(#amberGlow)"/>
+
+    <!-- Fedora Wide Curved Brim -->
+    <path d="M 14 23.5 C 19 21.5, 45 21.5, 50 23.5 C 51.5 25, 47 26.8, 41 26.2 C 32 26.8, 22 26.8, 17 26.2 C 12.5 25.5, 12.5 24.2, 14 23.5 Z" 
+          fill="url(#goldGrad)" stroke="#78350f" stroke-width="0.8"/>
+    <path d="M 16 23.8 C 22 22.5, 42 22.5, 48 23.8" 
+          stroke="#fef08a" stroke-width="0.6" fill="none" opacity="0.9"/>
+
+    <!-- 7-Pointed Veridia Detective Star Badge -->
+    <g transform="translate(32, 42.5) scale(0.95)">
+      <!-- 7-Point Star Polygon -->
+      <polygon points="
+        0,-14  3.1,-7.5  10.9,-10.2  7.7,-3.1  13.6,2.7  5.6,4.6
+        6.2,12.5  0,8.2  -6.2,12.5  -5.6,4.6  -13.6,2.7  -7.7,-3.1
+        -10.9,-10.2  -3.1,-7.5"
+        fill="url(#badgeGrad)" stroke="#451a03" stroke-width="0.8" stroke-linejoin="round"/>
+      
+      <!-- Inner Star Emboss -->
+      <circle cx="0" cy="0" r="6.2" fill="#0c0a09" stroke="url(#goldGrad)" stroke-width="1"/>
+      
+      <!-- Monogram 'P' (Phantom Prototype / Police Detective) -->
+      <text x="0" y="3.2" 
+            text-anchor="middle" 
+            font-family="'Cinzel', 'Georgia', 'Times New Roman', serif" 
+            font-size="8.5" 
+            font-weight="900" 
+            fill="url(#goldGrad)" 
+            letter-spacing="0">P</text>
+    </g>
+
+    <!-- Bottom Tiny Twin Stars -->
+    <circle cx="21" cy="53" r="1" fill="#f59e0b"/>
+    <circle cx="43" cy="53" r="1" fill="#f59e0b"/>
+  </g>
+</svg>
